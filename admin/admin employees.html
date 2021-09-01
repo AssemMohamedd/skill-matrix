@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cegedim Skills Matrix</title>
+<link rel="shortcut icon" type="" href="../HTML & CSS/empty logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black ;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.navbar {
+  position: absolute;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #0091d0;
+  color: black;
+}
+.logggo{
+    width: 16px;
+    height: 16px;
+}
+.card-container {
+        padding-top: 140px;
+        display: flex;
+        
+    }
+
+    .card {
+      min-width: 300px;
+        height: 350px;
+        border-radius: 16px;
+        background-color: rgb(209, 209, 209);
+        box-shadow: -1rem 0 3rem #000;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        transition: 0.2s;
+    }
+
+    .date {
+        color: #8a8a8a;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem 0 1rem;
+    }
+
+    .tags div {
+      background-color: #0091d0;
+        font-size: 9px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border: 3px solid #28242f;
+        border-radius: 2rem;
+    }
+
+    .card .category-title {
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+
+    .card .article-title {
+        font-size: 20px;
+        font-weight: 700;
+        border: 2px #0091d0;
+        border-radius: 5px;
+    }
+
+    .card .article-header {
+        margin-bottom: auto;
+    }
+
+    .card .author {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: 75px 1fr;
+    }
+
+    .author .info .caption {
+        color: #8a8a8a;
+    }
+
+    .card:not(:first-child) {
+        margin-left: -130px;
+    }
+
+    .card:hover {
+        transform: translateY(-1rem);
+    }
+
+    .card:hover~.card{
+        transform: translateX(130px);
+    }
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+    <a href="../admin/admin.html">
+        <img class="logggo" src="../HTML & CSS/empty logo.png" alt="">
+    </a>
+  <a href="#">Profile</a>
+  <a href="../admin/admin employees.html">Employees</a>
+  <a href="#">Manage Employees</a>
+  <a href="#">Pending Requests</a>
+  <a href="../Search/Search.html">Search</a>
+  <a href="#" class="right">Logout</a>
+</div>
+<div class="card-container">
+  <div class="card">
+      <header class="article-header">
+          <div>
+              <div class="category-title">
+                  employees or manager
+              </div>
+          </div>
+          <h2 class="article-title">
+              Employee Name
+          </h2>
+      </header>
+      <div class="author">
+          <div class="profile"></div>
+          <div class="info">
+              <div class="name">Skills</div>
+          </div>
+      </div>
+      <div class="tags">
+          <div>JavaScript</div>
+          <div>HTML</div>
+          <div>English</div>
+          <div>French</div>
+      </div>
+  </div>
+  <div class="card">
+    <header class="article-header">
+        <div>
+            <div class="category-title">
+                employees or manager
+            </div>
+        </div>
+        <h2 class="article-title">
+            Employee Name
+        </h2>
+    </header>
+    <div class="author">
+        <div class="profile"></div>
+        <div class="info">
+            <div class="name">Skills</div>
+        </div>
+    </div>
+    <div class="tags">
+        <div>JavaScript</div>
+        <div>HTML</div>
+        <div>English</div>
+        <div>French</div>
+    </div>
+</div>
+
+<div class="card">
+  <header class="article-header">
+      <div>
+          <div class="category-title">
+              employees or manager
+          </div>
+      </div>
+      <h2 class="article-title">
+          Employee Name
+      </h2>
+  </header>
+  <div class="author">
+      <div class="profile"></div>
+      <div class="info">
+          <div class="name">Skills</div>
+      </div>
+  </div>
+  <div class="tags">
+      <div>JavaScript</div>
+      <div>HTML</div>
+      <div>English</div>
+      <div>French</div>
+  </div>
+</div>
+<div class="card">
+  <header class="article-header">
+      <div>
+          <div class="category-title">
+              employees or manager
+          </div>
+      </div>
+      <h2 class="article-title">
+          Employee Name
+      </h2>
+  </header>
+  <div class="author">
+      <div class="profile"></div>
+      <div class="info">
+          <div class="name">Skills</div>
+      </div>
+  </div>
+  <div class="tags">
+      <div>JavaScript</div>
+      <div>HTML</div>
+      <div>English</div>
+      <div>French</div>
+  </div>
+</div>
+
+<div class="card">
+  <header class="article-header">
+      <div>
+          <div class="category-title">
+              employees or manager
+          </div>
+      </div>
+      <h2 class="article-title">
+          Employee Name
+      </h2>
+  </header>
+  <div class="author">
+      <div class="profile"></div>
+      <div class="info">
+          <div class="name">Skills</div>
+      </div>
+  </div>
+  <div class="tags">
+      <div>JavaScript</div>
+      <div>HTML</div>
+      <div>English</div>
+      <div>French</div>
+  </div>
+</div>
+<div class="card">
+  <header class="article-header">
+      <div>
+          <div class="category-title">
+              employees or manager
+          </div>
+      </div>
+      <h2 class="article-title">
+          Employee Name
+      </h2>
+  </header>
+  <div class="author">
+      <div class="profile"></div>
+      <div class="info">
+          <div class="name">Skills</div>
+      </div>
+  </div>
+  <div class="tags">
+      <div>JavaScript</div>
+      <div>HTML</div>
+      <div>English</div>
+      <div>French</div>
+  </div>
+</div>
+<div class="card">
+  <header class="article-header">
+      <div>
+          <div class="category-title">
+              employees or manager
+          </div>
+      </div>
+      <h2 class="article-title">
+          Employee Name
+      </h2>
+  </header>
+  <div class="author">
+      <div class="profile"></div>
+      <div class="info">
+          <div class="name">Skills</div>
+      </div>
+  </div>
+  <div class="tags">
+      <div>JavaScript</div>
+      <div>HTML</div>
+      <div>English</div>
+      <div>French</div>
+  </div>
+</div>
+  
+
+</div>
+<script>
+  let navbar = document.getElementsByClassName("navbar")[0]
+  navbar.style.left = "100px"
+
+  document.addEventListener("scroll", () => {
+    console.log(window.pageXOffset || document.documentElement.scrollLeft);
+    navbar.style.left =  `${window.pageXOffset || document.documentElement.scrollLeft}px`;
+  })
+
+  </script>
+</body>
+</html>

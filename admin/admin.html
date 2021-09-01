@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cegedim Skills Matrix</title>
+<link rel="shortcut icon" type="" href="../HTML & CSS/empty logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: url(../HTML\ &\ CSS/Employees.jpg) ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #0091d0;
+  color: black;
+}
+
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 15px;
+  text-align: center;
+  background: #ddd;
+}
+.linkedin{
+  position: absolute;
+  left: 41.5%;
+    width: 32px;
+    height: 32px;
+}
+.cegedim{
+    position: absolute;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+}
+.facebook{
+  position: absolute;
+  left: 45%;
+    width: 32px;
+    height: 32px;
+
+}
+.txt-railway{
+  margin-left: 75%;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Cegedim Egypt</h1>
+  <p></p>
+  <img src="../HTML & CSS/white logo.png" alt="" style="width: 174.75px; height: 63.6875px;position: absolute; right: 85%; bottom: 85%;">
+</div>
+
+<div class="navbar">
+  <a href="../admin/admin.html">Home</a>
+  <a href="#">Profile</a>
+  <a href="../admin/admin employees.html">Employees</a>
+  <a href="#">Manage Employees</a>
+  <a href="#">Pending Requests</a>
+  <a href="../Search/Search.html">Search</a>
+  <a href="#" class="right">Logout</a>
+</div>
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+
+<div class="footer">
+    <a href="https://www.linkedin.com/company/cegedim/">
+    <img class="linkedin" src="../HTML & CSS/Linkedin.png" alt="">
+    </a>
+    <a href="https://www.cegedim.com/Pages/default.aspx">
+        <img class="cegedim" src="../HTML & CSS/empty logo.png" alt="">
+    </a> 
+    <a href="https://www.facebook.com/CegedimGroup">
+        <img class="facebook" src="../HTML & CSS/facebook.png" alt="">
+    </a>
+    <p class="txt-railway" style="color:grey">Cegedim Egypt ©️ 2021 Copyrights</p>
+</div>
+
+</body>
+</html>
